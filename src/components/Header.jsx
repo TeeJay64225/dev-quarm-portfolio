@@ -58,7 +58,7 @@ const Header = ({ isMenuOpen, toggleMenu, toggleTheme }) => {
         .logo {
           font-weight: 700;
           font-size: 1.5rem;
-          color: var(--primary-light, #9F7AEA);
+        //   color: var(--primary-light, #9F7AEA);
         }
 
         .highlight {

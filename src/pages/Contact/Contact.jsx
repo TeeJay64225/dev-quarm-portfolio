@@ -25,6 +25,14 @@ const ContactPage = () => {
     
     // Basic form validation
     if (formData.name && formData.email && formData.message) {
+      // Create mailto link with form data
+      const subject = formData.subject || 'Contact from Portfolio Website';
+      const body = `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`;
+      const mailtoLink = `mailto:kwesilit@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      
+      // Open email client
+      window.location.href = mailtoLink;
+      
       // Show success message
       setShowSuccess(true);
       
@@ -144,19 +152,19 @@ const ContactPage = () => {
                   <div className="info-icon">
                     <Phone size={16} />
                   </div>
-                  <span>+1 (555) 123-4567</span>
+                  <a href="tel:+233240064225" className="info-link">+233 24 00 64 225</a>
                 </div>
                 <div className="info-item">
                   <div className="info-icon">
                     <Mail size={16} />
                   </div>
-                  <span>contact@devquarm.com</span>
+                  <a href="mailto:kwesilit@gmail.com" className="info-link">kwesilit@gmail.com</a>
                 </div>
                 <div className="info-item">
                   <div className="info-icon">
                     <MapPin size={16} />
                   </div>
-                  <span>San Francisco, California</span>
+                  <span>Takoradi, Ghana</span>
                 </div>
               </div>
             </div>
@@ -164,15 +172,15 @@ const ContactPage = () => {
             <div>
               <h3 className="info-title" style={{fontSize: '1.2rem'}}>Connect With Me</h3>
               <div className="social-links">
-                <div className="social-icon">
+                <a href="https://www.linkedin.com/in/theophilus-quarm/" target="_blank" rel="noopener noreferrer" className="social-icon">
                   <Linkedin size={16} />
-                </div>
-                <div className="social-icon">
+                </a>
+                <a href="https://github.com/TeeJay64225" target="_blank" rel="noopener noreferrer" className="social-icon">
                   <Github size={16} />
-                </div>
-                <div className="social-icon">
+                </a>
+                <a href="https://www.instagram.com/dev_quarm/" target="_blank" rel="noopener noreferrer" className="social-icon">
                   <Instagram size={16} />
-                </div>
+                </a>
                 <div className="social-icon">
                   <Twitter size={16} />
                 </div>
@@ -183,7 +191,7 @@ const ContactPage = () => {
       </div>
 
       <footer className="footer">
-        <p>&copy; 2025 Dev Quarm. All rights reserved.</p>
+        <p>&copy; 2026 Theophilus Quarm. All rights reserved.</p>
       </footer>
     </>
   );

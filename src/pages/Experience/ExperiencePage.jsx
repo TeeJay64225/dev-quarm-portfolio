@@ -14,62 +14,64 @@ const ExperiencePage = () => {
         <div className="timeline">
           <div className="timeline-item">
             <div className="timeline-content">
-              <span className="timeline-date">2023 - Present</span>
-              <h3 className="timeline-title">Senior Full-Stack Developer</h3>
-              <h4 className="timeline-company">TechNova Solutions</h4>
-              <p className="timeline-desc">Leading development of enterprise-level web applications with a focus on scalability and performance optimization. Mentoring junior developers and implementing best practices across the team.</p>
+              <span className="timeline-date">Ongoing</span>
+              <h3 className="timeline-title">Freelance Web Developer</h3>
+              <h4 className="timeline-company">Self-Employed</h4>
+              <p className="timeline-desc">Delivered custom websites and applications for small businesses, including the Buildmax Company site. Working end-to-end from concept to deployment, integrating payment systems, CMS solutions, and responsive UI designs.</p>
               <div className="timeline-tech">
                 <span className="tech-badge">React</span>
                 <span className="tech-badge">Node.js</span>
-                <span className="tech-badge">TypeScript</span>
-                <span className="tech-badge">GraphQL</span>
-                <span className="tech-badge">AWS</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="timeline-item">
-            <div className="timeline-content">
-              <span className="timeline-date">2021 - 2023</span>
-              <h3 className="timeline-title">Full-Stack Developer</h3>
-              <h4 className="timeline-company">Digital Harmony Inc.</h4>
-              <p className="timeline-desc">Developed and maintained multiple client projects using the MERN stack. Implemented CI/CD pipelines and contributed to the company's internal component library.</p>
-              <div className="timeline-tech">
-                <span className="tech-badge">MongoDB</span>
-                <span className="tech-badge">Express</span>
-                <span className="tech-badge">React</span>
-                <span className="tech-badge">Node.js</span>
-                <span className="tech-badge">Docker</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="timeline-item">
-            <div className="timeline-content">
-              <span className="timeline-date">2020 - 2021</span>
-              <h3 className="timeline-title">Frontend Developer</h3>
-              <h4 className="timeline-company">Webflow Creatives</h4>
-              <p className="timeline-desc">Designed and built responsive user interfaces for e-commerce and corporate websites. Collaborated with UX designers to implement pixel-perfect designs and animations.</p>
-              <div className="timeline-tech">
-                <span className="tech-badge">JavaScript</span>
-                <span className="tech-badge">React</span>
-                <span className="tech-badge">SCSS</span>
-                <span className="tech-badge">Figma</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="timeline-item">
-            <div className="timeline-content">
-              <span className="timeline-date">2019 - 2020</span>
-              <h3 className="timeline-title">Junior Web Developer</h3>
-              <h4 className="timeline-company">CodeCraft Studio</h4>
-              <p className="timeline-desc">Started my professional journey building websites and small web applications. Gained experience in various technologies while working on client projects under senior guidance.</p>
-              <div className="timeline-tech">
-                <span className="tech-badge">HTML/CSS</span>
                 <span className="tech-badge">JavaScript</span>
                 <span className="tech-badge">PHP</span>
                 <span className="tech-badge">MySQL</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="timeline-item">
+            <div className="timeline-content">
+              <span className="timeline-date">2025 (6 Months)</span>
+              <h3 className="timeline-title">Software Developer Intern</h3>
+              <h4 className="timeline-company">Qliq Integration</h4>
+              <p className="timeline-desc">Contributing to backend development using Node.js and Spring Boot, building RESTful APIs, and integrating AI-powered features. Participating in code reviews and agile sprints, ensuring high-quality deliverables.</p>
+              <div className="timeline-tech">
+                <span className="tech-badge">Node.js</span>
+                <span className="tech-badge">Spring Boot</span>
+                <span className="tech-badge">RESTful APIs</span>
+                <span className="tech-badge">Java</span>
+                <span className="tech-badge">AI Integration</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="timeline-item">
+            <div className="timeline-content">
+              <span className="timeline-date">2024 (6 Months)</span>
+              <h3 className="timeline-title">Software Developer Intern</h3>
+              <h4 className="timeline-company">Duapa Werkspace</h4>
+              <p className="timeline-desc">Developed and maintained web applications, collaborated with cross-functional teams, and implemented payment integrations using Paystack and Stripe. Improved UI/UX for client projects, ensuring responsive and accessible designs.</p>
+              <div className="timeline-tech">
+                <span className="tech-badge">JavaScript</span>
+                <span className="tech-badge">React</span>
+                <span className="tech-badge">Paystack</span>
+                <span className="tech-badge">Stripe</span>
+                <span className="tech-badge">UI/UX</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="timeline-item">
+            <div className="timeline-content">
+              <span className="timeline-date">2022 - 2026</span>
+              <h3 className="timeline-title">Academic Projects</h3>
+              <h4 className="timeline-company">Takoradi Technical University</h4>
+              <p className="timeline-desc">Designed and developed multiple academic projects, including a Java-based online banking system, appointment booking app, and a university course management platform. Focused on secure backend logic, user-friendly interfaces, and database optimization.</p>
+              <div className="timeline-tech">
+                <span className="tech-badge">Java</span>
+                <span className="tech-badge">Spring Boot</span>
+                <span className="tech-badge">MySQL</span>
+                <span className="tech-badge">JavaScript</span>
+                <span className="tech-badge">Database Design</span>
               </div>
             </div>
           </div>
@@ -162,18 +164,19 @@ const ExperiencePage = () => {
         </div>
 
         <div className="education-container">
-          <h3 className="skills-title">Education</h3>
+          <h3 className="skills-title">Education</h3>   
           <div className="education-card">
-            <div className="education-date">2016 - 2019</div>
+            <div className="education-date">2022 - 2026</div>
             <h3 className="education-degree">Bachelor of Science in Computer Science</h3>
-            <h4 className="education-school">University of Technology</h4>
-            <p className="education-desc">Specialized in Web Development and Software Engineering. Graduated with honors and participated in multiple hackathons, winning the university's annual coding competition in 2018.</p>
+            <h4 className="education-school">Takoradi Technical University (TTU)</h4>
+            <p className="education-desc">Specialized in Web Development and Software Engineering. Graduated with honors and participated in multiple internship Programs, Participating in multiple projects and the university's semester coding projects 2022 - 2026.</p>
           </div>
           <div className="education-card">
-            <div className="education-date">2022</div>
-            <h3 className="education-degree">Advanced React & GraphQL Certification</h3>
+            <div className="education-date">2026</div>
+            <h3 className="education-degree">Software Developer Certification</h3>
             <h4 className="education-school">Frontend Masters</h4>
-            <p className="education-desc">Completed intensive training on building scalable applications with React, GraphQL, and modern state management techniques.</p>
+            <h4 className="education-school">Backend Masters</h4>
+            <p className="education-desc">Completed intensive training on building scalable applications with React, REST APIs, and modern state management techniques.</p>
           </div>
         </div>
       </div>

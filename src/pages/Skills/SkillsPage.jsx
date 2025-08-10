@@ -41,104 +41,138 @@ const SkillsPage = () => {
   }, []);
 
   const frontendSkills = [
-    { name: 'React', progress: 95 },
-    { name: 'TypeScript', progress: 90 },
-    { name: 'Next.js', progress: 85 },
-    { name: 'CSS/SASS', progress: 90 }
+    { name: 'React.js', progress: 95 },
+    { name: 'JavaScript (ES6+)', progress: 92 },
+    { name: 'HTML5', progress: 98 },
+    { name: 'CSS3', progress: 95 },
+    { name: 'Flutter', progress: 88 },
+    { name: 'Tailwind CSS', progress: 90 }
   ];
 
   const backendSkills = [
     { name: 'Node.js', progress: 90 },
-    { name: 'Express', progress: 85 },
-    { name: 'GraphQL', progress: 80 },
-    { name: 'Python', progress: 75 }
+    { name: 'Express', progress: 88 },
+    { name: 'Spring Boot (Java)', progress: 85 },
+    { name: 'PHP', progress: 80 },
+    { name: 'C#', progress: 75 },
+    { name: 'GraphQL', progress: 82 }
   ];
 
   const databaseSkills = [
-    { name: 'MongoDB', progress: 90 },
-    { name: 'PostgreSQL', progress: 85 },
-    { name: 'Redis', progress: 80 },
-    { name: 'Firebase', progress: 85 }
+    { name: 'MySQL', progress: 90 },
+    { name: 'PostgreSQL', progress: 88 },
+    { name: 'MongoDB', progress: 85 }
   ];
 
   const devopsSkills = [
     { name: 'Docker', progress: 85 },
-    { name: 'AWS', progress: 80 },
-    { name: 'CI/CD', progress: 75 },
-    { name: 'Vercel/Netlify', progress: 90 }
+    { name: 'AWS', progress: 82 },
+    { name: 'Kubernetes', progress: 78 },
+    { name: 'CI/CD', progress: 85 },
+    { name: 'Git', progress: 95 }
   ];
 
-  const frontendBadges = ['Redux', 'Tailwind CSS', 'Styled Components', 'Jest', 'React Testing Library'];
-  const backendBadges = ['REST APIs', 'Microservices', 'Serverless', 'Socket.io', 'Authentication'];
-  const databaseBadges = ['Mongoose', 'Prisma', 'Data Modeling', 'Caching'];
-  const devopsBadges = ['GitHub Actions', 'Kubernetes', 'Terraform', 'Monitoring'];
+  const frontendBadges = ['UI/UX Design', 'Responsive Design', 'Single Page Applications', 'Component Architecture', 'Mobile Development'];
+  const backendBadges = ['REST APIs', 'API Design', 'Microservices', 'Authentication', 'Server Architecture'];
+  const databaseBadges = ['Database Design', 'Query Optimization', 'Data Modeling', 'ACID Properties'];
+  const devopsBadges = ['GitHub Actions', 'Container Orchestration', 'Cloud Infrastructure', 'Automated Testing'];
+
+  const integrationSkills = [
+    { name: 'Paystack Integration', icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+        <line x1="1" y1="10" x2="23" y2="10"></line>
+      </svg>
+    )},
+    { name: 'Stripe Integration', icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"></path>
+        <path d="m2 7 10 6 10-6"></path>
+      </svg>
+    )},
+    { name: 'PDF Generation', icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+        <polyline points="14 2 14 8 20 8"></polyline>
+        <line x1="16" y1="13" x2="8" y2="13"></line>
+        <line x1="16" y1="17" x2="8" y2="17"></line>
+        <polyline points="10 9 9 9 8 9"></polyline>
+      </svg>
+    )},
+    { name: 'AI-Powered Features', icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h4a2 2 0 0 1 2 2v1.28c.6.35 1 .98 1 1.72 0 .74-.4 1.38-1 1.73V15a2 2 0 0 1-2 2h-4v1.27c.6.35 1 .98 1 1.73a2 2 0 1 1-4 0c0-.75.4-1.38 1-1.73V17H7a2 2 0 0 1-2-2v-1.28c-.6-.35-1-.98-1-1.72 0-.74.4-1.38 1-1.73V9a2 2 0 0 1 2-2h4V5.73c-.6-.35-1-.98-1-1.73a2 2 0 0 1 2-2z"></path>
+        <circle cx="12" cy="12" r="3"></circle>
+      </svg>
+    )}
+  ];
 
   const tools = [
     { name: 'Git', icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
-        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
       </svg>
     )},
     { name: 'VS Code', icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <line x1="4" y1="21" x2="4" y2="14"></line>
-        <line x1="4" y1="10" x2="4" y2="3"></line>
-        <line x1="12" y1="21" x2="12" y2="12"></line>
-        <line x1="12" y1="8" x2="12" y2="3"></line>
-        <line x1="20" y1="21" x2="20" y2="16"></line>
-        <line x1="20" y1="12" x2="20" y2="3"></line>
-        <line x1="1" y1="14" x2="7" y2="14"></line>
-        <line x1="9" y1="8" x2="15" y2="8"></line>
-        <line x1="17" y1="16" x2="23" y2="16"></line>
+        <polyline points="16 3 21 8 8 21 3 16 16 3"></polyline>
       </svg>
     )},
-    { name: 'Webpack', icon: (
+    { name: 'Docker', icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
-        <polyline points="7.5 4.21 12 6.81 16.5 4.21"></polyline>
-        <polyline points="7.5 19.79 7.5 14.6 3 12"></polyline>
-        <polyline points="21 12 16.5 14.6 16.5 19.79"></polyline>
-        <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
-        <line x1="12" y1="22.08" x2="12" y2="12"></line>
       </svg>
     )},
-    { name: 'Postman', icon: (
+    { name: 'GitHub Actions', icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-        <line x1="8" y1="21" x2="16" y2="21"></line>
-        <line x1="12" y1="17" x2="12" y2="21"></line>
+        <circle cx="12" cy="12" r="3"></circle>
+        <path d="M12 1v6m0 6v6"></path>
+        <path d="m15.07 4.93 4.24 4.24"></path>
+        <path d="M4.93 15.07 9.17 19.31"></path>
+        <path d="m1 12 6 0m6 0 6 0"></path>
+        <path d="m4.93 8.93 4.24-4.24"></path>
+        <path d="m15.07 19.07 4.24-4.24"></path>
       </svg>
     )},
-    { name: 'Analytics', icon: (
+    { name: 'AWS', icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+        <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
+        <line x1="4" y1="22" x2="4" y2="15"></line>
+      </svg>
+    )},
+    { name: 'Figma', icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"></path>
+        <path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"></path>
+        <path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z"></path>
+        <path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z"></path>
+        <path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"></path>
       </svg>
     )}
   ];
 
   const achievements = [
-    { text: 'AWS Certified Developer', icon: (
+    { text: 'Full-Stack Developer', icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
         <polyline points="22 4 12 14.01 9 11.01"></polyline>
       </svg>
     )},
-    { text: 'MongoDB Certified Developer', icon: (
+    { text: 'Mobile App Developer', icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+        <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+        <line x1="12" y1="18" x2="12.01" y2="18"></line>
       </svg>
     )},
-    { text: 'Google Cloud Certified', icon: (
+    { text: 'API Integration Specialist', icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+        <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+        <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
       </svg>
     )},
-    { text: 'Hackathon Winner 2023', icon: (
+    { text: 'Cloud Infrastructure', icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+        <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
       </svg>
     )}
   ];
@@ -168,6 +202,15 @@ const SkillsPage = () => {
     </div>
   );
 
+  const IntegrationItem = ({ integration }) => (
+    <div className="integration-item">
+      <div className="integration-icon">
+        {integration.icon}
+      </div>
+      <div className="integration-name">{integration.name}</div>
+    </div>
+  );
+
   const Achievement = ({ achievement }) => (
     <div className="achievement">
       <div className="achievement-icon">
@@ -185,7 +228,9 @@ const SkillsPage = () => {
 
       <h2 className="section-title fade-in">Skills & Expertise</h2>
       <p className="skills-intro fade-in">
-        With over 5 years of experience in full-stack development, I've cultivated a diverse skillset that enables me to build complete, scalable applications from the ground up. My expertise spans front-end technologies, back-end systems, database management, and DevOps practices.
+        Passionate full-stack developer with expertise in building scalable web and mobile applications. 
+        I specialize in modern frontend frameworks, robust backend systems, and seamless third-party integrations 
+        to deliver complete digital solutions.
       </p>
 
       <div className="skills-container">
@@ -199,6 +244,9 @@ const SkillsPage = () => {
             </svg>
             Frontend Development
           </h3>
+          <p className="category-description">
+            Skilled in building responsive, user-friendly, and visually engaging interfaces using modern frontend tools and frameworks.
+          </p>
           <div className="skill-list">
             {frontendSkills.map((skill, index) => (
               <SkillItem key={index} skill={skill} />
@@ -219,6 +267,9 @@ const SkillsPage = () => {
             </svg>
             Backend Development
           </h3>
+          <p className="category-description">
+            Proficient in developing secure, scalable, and high-performance server-side applications and APIs.
+          </p>
           <div className="skill-list">
             {backendSkills.map((skill, index) => (
               <SkillItem key={index} skill={skill} />
@@ -239,8 +290,11 @@ const SkillsPage = () => {
               <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
               <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
             </svg>
-            Database & Data Management
+            Databases & Data Management
           </h3>
+          <p className="category-description">
+            Experience with relational and non-relational databases, ensuring optimal data storage and retrieval.
+          </p>
           <div className="skill-list">
             {databaseSkills.map((skill, index) => (
               <SkillItem key={index} skill={skill} />
@@ -264,6 +318,9 @@ const SkillsPage = () => {
             </svg>
             DevOps & Deployment
           </h3>
+          <p className="category-description">
+            Experienced in continuous integration, deployment pipelines, and cloud infrastructure management.
+          </p>
           <div className="skill-list">
             {devopsSkills.map((skill, index) => (
               <SkillItem key={index} skill={skill} />
@@ -276,27 +333,43 @@ const SkillsPage = () => {
           </div>
         </div>
 
+        {/* Integrations & Special Features */}
+        <div className="skill-category fade-in">
+          <h3 className="category-title">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M12 2v6"></path>
+              <path d="M12 16v6"></path>
+              <path d="M4.93 4.93l4.24 4.24"></path>
+              <path d="m14.83 14.83 4.24 4.24"></path>
+              <path d="M2 12h6"></path>
+              <path d="M16 12h6"></path>
+              <path d="m4.93 19.07 4.24-4.24"></path>
+              <path d="m14.83 9.17 4.24-4.24"></path>
+            </svg>
+            Integrations & Advanced Features
+          </h3>
+          <p className="category-description">
+            Specialized in third-party service integration and implementing advanced features like AI-powered functionality.
+          </p>
+          <div className="integrations-grid">
+            {integrationSkills.map((integration, index) => (
+              <IntegrationItem key={index} integration={integration} />
+            ))}
+          </div>
+        </div>
+
         {/* Tools Category */}
         <div className="skill-category fade-in">
           <h3 className="category-title">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
             </svg>
-            Tools & Utilities
+            Development Tools & Utilities
           </h3>
           <div className="tools-grid">
             {tools.map((tool, index) => (
               <ToolItem key={index} tool={tool} />
             ))}
-            <div className="tool-item">
-              <div className="tool-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
-                </svg>
-              </div>
-              <div className="tool-name">Figma</div>
-            </div>
           </div>
         </div>
 
@@ -307,7 +380,7 @@ const SkillsPage = () => {
               <circle cx="12" cy="8" r="7"></circle>
               <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
             </svg>
-            Certifications & Achievements
+            Expertise Areas
           </h3>
           <div className="achievements">
             {achievements.map((achievement, index) => (
